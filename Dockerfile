@@ -18,8 +18,5 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app
 COPY --from=build /app ./
 
-# Expose port 10000
-ENV ASPNETCORE_URLS=http://+:$PORT
-
 # Start the application
 ENTRYPOINT ["dotnet", "WebAppMR.dll"]
