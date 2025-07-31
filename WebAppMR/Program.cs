@@ -78,7 +78,7 @@ app.MapWhen(
             }
         });
     });
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 app.Run();
 

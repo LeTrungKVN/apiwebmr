@@ -19,6 +19,7 @@ WORKDIR /app
 COPY --from=build /app ./
 
 # Expose port 10000
+ENV ASPNETCORE_URLS=http://+:$PORT
 EXPOSE 10000
 
 
