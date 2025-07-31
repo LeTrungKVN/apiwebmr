@@ -8,7 +8,6 @@ services:
       - "10000:10000"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - PORT=10000
     restart: unless-stopped
     # Uncomment if you need to persist data or mount volumes
     # volumes:

@@ -20,11 +20,6 @@ COPY --from=build /app ./
 
 # Expose port 10000
 ENV ASPNETCORE_URLS=http://+:$PORT
-EXPOSE 10000
-
-
-# Set environment variables for Render.com port binding
-ENV ASPNETCORE_URLS=http://0.0.0.0:${PORT}
 
 # Start the application
 ENTRYPOINT ["dotnet", "WebAppMR.dll"]
