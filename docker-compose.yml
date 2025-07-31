@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:80"
+      - "10000:10000"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     restart: unless-stopped

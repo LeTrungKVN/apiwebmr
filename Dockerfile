@@ -18,8 +18,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app
 COPY --from=build /app ./
 
-# Expose port 80
-EXPOSE 80
+# Expose port 10000
+EXPOSE 10000
 
 # Set environment variables (optional)
 # ENV ASPNETCORE_ENVIRONMENT=Production
