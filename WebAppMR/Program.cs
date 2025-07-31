@@ -32,7 +32,7 @@ app.UseWebSockets();
 
 app.MapControllers();
 
-
+app.MapGet("/", () => "ASP.NET Core Render is live");
 app.MapWhen(
     context => context.Request.Path == "/ws",
     appBuilder =>
